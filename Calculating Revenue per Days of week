@@ -1,0 +1,6 @@
+select transaction_date,to_char(transaction_date,'YYYY-MM-DD')AS YEAR_date,year(transaction_date)as year,month(transaction_date)as Month,monthname(transaction_date)as month_name,dayofweek(transaction_date)as Day_of_week,dayname(transaction_date)as day_name,
+case when day_name not in ('sat','sun')then 'Weekday'
+else 'Weekend'
+end as Week_days_Classifications,store_location,sum(transaction_qty*unit_price)as Revenue
+from coffee_business.coffee_shops.bright_coffee_shop_analysis
+GROUP BY All;
