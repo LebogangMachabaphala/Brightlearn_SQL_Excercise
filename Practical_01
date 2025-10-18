@@ -1,1 +1,4 @@
-
+columns for all transactions. 
+--Expected output: All columns 
+select*
+from practical_01.coffee_shop.retail_01;
