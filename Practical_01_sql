@@ -1,0 +1,9 @@
+columns for all transactions. 
+--Expected output: All columns 
+select*
+from practical_01.coffee_shop.retail_01;
+
+--Q3. Display all the distinct product categories in the dataset. 
+--Expected output: Product Category  
+SELECT distinct (product_category)
+from practical_01.coffee_shop.retail_01;
